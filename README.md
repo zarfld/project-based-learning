@@ -113,6 +113,21 @@ project-based-learning/
 
 ## 🎓 Pädagogischer Ansatz
 
+Unser Framework basiert auf **10 bewährten Best Practices** für modernen Programmierunterricht (2025):
+
+1. 🌍 **Real-World Examples** - Alltagsrelevante Projekte
+2. 🧩 **Break Down Complex Topics** - Schritt-für-Schritt Lernen
+3. 🧠 **Focus on Problem-Solving** - Denken lernen, nicht nur Syntax
+4. 🚀 **Project-Based Learning** - Learning by Doing
+5. 🎨 **Adapt to Learning Styles** - Multimodaler Unterricht
+6. 🛠️ **Modern Tools** - VS Code, Copilot, Git
+7. 👥 **Collaborative Programming** - Zusammenarbeit fördern
+8. 🌱 **Growth Mindset** - Fehler als Lernchance
+9. 💬 **Continuous Feedback** - Zeitnahes, konstruktives Feedback
+10. 📈 **Stay Updated** - Aktuelle Technologien und Trends
+
+> 📖 **Detaillierte Erklärung**: Siehe [TEACHING-BEST-PRACTICES.md](TEACHING-BEST-PRACTICES.md)
+
 ### Adaptive Unterstützung
 
 Der Copilot arbeitet nach der **Socratic Methode**:
