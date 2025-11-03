@@ -14,8 +14,15 @@ Vollständiges Verzeichnis aller Prompt-Framework-Dateien mit Zweck und Verwendu
 ├── conversation-patterns.md      # Konversationsmuster & Assessment
 ├── project-spec-template.yaml    # YAML-Template für Projekspezifikationen
 ├── example-project.md            # Vollständiges Beispielprojekt
-└── file-overview.md              # Diese Datei
+├── file-overview.md              # Diese Datei
+│
+├── pedagogical-model.md          # ✨ NEU: Theoretisches Fundament (4-Phasen, Rollen)
+├── competency-framework.md       # ✨ NEU: 5 Kompetenzen, Diagnostik, Rubrik
+└── integration-guide.md          # ✨ NEU: Framework-Integration & Workflows
 ```
+
+> **✨ NEU (November 2025):** Erweitert um wissenschaftlich fundierte didaktische Frameworks basierend auf 
+> Polya, Vygotsky, Collins, Hubwieser, Wing und GI-Bildungsstandards.
 
 ---
 
@@ -326,53 +333,43 @@ zeigt adaptive Anpassungen in Echtzeit.
 
 ---
 
-## 🔄 Zusammenspiel der Dateien
+## 🔄 Zusammenspiel der Dateien (Aktualisiert)
 
+```mermaid
+graph TD
+    A[README.md<br/>Einstieg & Übersicht] --> B[system-prompt.md<br/>Rolle & Core]
+    A --> C[phase-prompts.md<br/>6 Phasen]
+    A --> D[conversation-patterns.md<br/>Assessment]
+    A --> E[pedagogical-model.md ✨<br/>Theorie & 4-Phasen]
+    A --> F[competency-framework.md ✨<br/>5 Kompetenzen]
+    A --> G[integration-guide.md ✨<br/>Workflows]
+    
+    E --> B
+    E --> C
+    F --> D
+    F --> H[project-spec-template.yaml<br/>Daten-Struktur]
+    G --> B
+    G --> C
+    G --> D
+    G --> H
+    
+    B --> I[GitHub Copilot<br/>AI Tutor]
+    C --> I
+    D --> I
+    E --> I
+    F --> I
+    
+    I --> H
+    H --> J[project-spec.yaml<br/>pro Projekt]
+    
+    J -.Beispiel.-> K[example-project.md<br/>Zahlen-Ratespiel]
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                       README.md                             │
-│        (Einstiegspunkt, Übersicht, Integration)            │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-         ┌───────────────┼───────────────┐
-         │               │               │
-         ▼               ▼               ▼
-┌────────────────┐ ┌────────────┐ ┌──────────────┐
-│ system-prompt  │ │  phase-    │ │ conversation-│
-│     .md        │ │ prompts.md │ │  patterns.md │
-│ (Rolle & Core) │ │ (6 Phasen) │ │ (Assessment) │
-└────────┬───────┘ └─────┬──────┘ └──────┬───────┘
-         │               │               │
-         │       ┌───────┴───────┐       │
-         │       │               │       │
-         ▼       ▼               ▼       ▼
-    ┌────────────────────────────────────────┐
-    │  GitHub Copilot (Adaptive AI Tutor)    │
-    │  - Liest alle Dateien                  │
-    │  - Wählt passende Prompts              │
-    │  - Generiert Responses                 │
-    │  - Tracked Progress                    │
-    └────────────┬───────────────────────────┘
-                 │
-                 │ erstellt/aktualisiert
-                 │
-                 ▼
-    ┌────────────────────────────┐
-    │ project-spec-template.yaml │
-    │ → project-spec.yaml        │
-    │   (für jedes Projekt)      │
-    └────────────┬───────────────┘
-                 │
-                 │ Beispiel
-                 │
-                 ▼
-    ┌────────────────────────────┐
-    │   example-project.md       │
-    │   (Zahlen-Ratespiel)       │
-    │   - Zeigt vollständigen    │
-    │     Workflow               │
-    └────────────────────────────┘
-```
+
+**Legende:**
+- **Basis-Framework** (schwarz): Ursprüngliche 7 Dateien
+- **Neue Frameworks** ✨ (hervorgehoben): 3 neue didaktische Dateien
+- Durchgezogene Pfeile: Direkte Verwendung
+- Gestrichelte Pfeile: Beispiel-Beziehung
 
 ---
 
@@ -570,10 +567,192 @@ Für tiefere Einblicke siehe auch:
 
 ---
 
-**Framework-Version:** 1.0  
-**Letzte Aktualisierung:** März 2025  
+**Framework-Version:** 2.0  
+**Letzte Aktualisierung:** November 2025  
 **Maintainer:** Projekt-Team "project-based-learning"
 
 ---
 
-**Happy Coding & Teaching! 🚀**
+Happy Coding & Teaching! 🚀
+
+---
+
+### 7. pedagogical-model.md ✨ NEU
+**Zweck:** Wissenschaftlich fundiertes theoretisches Fundament für AI-assisted Learning
+
+**Inhalt:**
+- **Rollenmodell:**
+  - Lernende (aktive Problemlöser)
+  - KI-Copilot "Kai" (adaptiver Tutor)
+  - Lehrende (Monitoring & Facilitation)
+  
+- **4-Phasen-Zyklus:**
+  1. Anforderungsanalyse (Problem verstehen)
+  2. Konzeptualisierung (Design & Modellierung)
+  3. Realisierung (Implementation)
+  4. Reflexion (Debugging, Review, Lernen)
+  
+- **Differentieller Code-Support:**
+  - Anfänger: High Scaffolding, erklärender Code
+  - Fortgeschritten: Medium Scaffolding, Guidelines
+  - Erfahren: Low Scaffolding, Diskussion von Trade-offs
+  
+- **Didaktische Grundprinzipien:**
+  - Zone der proximalen Entwicklung (Vygotsky)
+  - Problem-Solving Framework (Polya)
+  - Cognitive Apprenticeship (Collins)
+  - Computational Thinking (Wing)
+  - u.a. (8 Prinzipien total)
+  
+- **Kompetenzentwicklung:**
+  - GI-Bildungsstandards-Alignment
+  - Modellieren, Implementieren, Reflektieren, Kommunizieren, KI-Kooperation
+  
+- **Lernfortschrittsdiagnostik:**
+  - 5 automatische Indikatoren (Prompt-Qualität, Code-Übernahme, Debugging-Autonomie, etc.)
+  
+- **Technisch-Didaktische Infrastruktur:**
+  - Übersicht aller System-Komponenten
+
+**Für wen:**
+- Forscher & Didaktiker (theoretische Grundlage)
+- Entwickler (Verständnis des WARUM hinter Prompts)
+- Lehrer (Legitimation & wissenschaftliche Verankerung)
+
+**Wann verwenden:**
+- Bei Fragen nach theoretischem Fundament
+- Bei Design-Entscheidungen für neue Features
+- Für wissenschaftliche Publikationen über das System
+- Als Referenz für Lehrerfortbildungen
+
+**Besonderheit:**
+Verbindet etablierte Lerntheorien mit praktischer AI-Tutoring-Implementation.
+
+---
+
+### 8. competency-framework.md ✨ NEU
+**Zweck:** Messbare Kompetenzen und diagnostische Methoden
+
+**Inhalt:**
+
+#### 5 Kompetenzraster (je 4×4 Levels):
+1. **Modellieren** (Probleme strukturiert analysieren)
+2. **Implementieren** (Code erstellen & debuggen)
+3. **Reflektieren** (Code-Qualität bewerten)
+4. **Kommunizieren** (Technische Konzepte erklären)
+5. **KI-Kooperation** (Effektiv mit AI-Tools arbeiten)
+
+#### Diagnostik-Methoden (automatisiert):
+1. **Prompt-Evolution-Analyse:**
+   - YAML-basiertes Tracking von Prompt-Qualität
+   - 7 Metriken (Spezifität, Kontext, etc.)
+   
+2. **Code-Übernahmequote:**
+   - Git-basierte Authorship-Analyse
+   - Trennung: Copilot-generiert vs. selbstgeschrieben
+   
+3. **Debugging-Autonomie-Score:**
+   - 5-stufige Skala (0=Hilflos → 4=Systematisch)
+   
+4. **Konzept-Mastery-Tracker:**
+   - 6 Mastery-Stages pro Konzept
+   - 0=Unbewusste Inkompetenz → 5=Unbewusste Kompetenz
+   
+5. **Metakognitive Reifung:**
+   - Self-Awareness Indikatoren
+
+#### Bewertungs-Rubrik:
+- 6 Kriterien × 4 Levels
+- Für Lehrer zur formativen Assessment
+- Transparente, faire Bewertung
+
+#### Self-Assessment:
+- Fragebogen für Lernende
+- Reflexions-Prompts
+
+#### Dashboard-Visualisierung:
+- Konzeptionelles Design für Progress-Tracking UI
+
+**Für wen:**
+- Copilot (automatische Diagnostik während Session)
+- Lehrer (manuelle Assessment & Rubrik)
+- Lernende (Self-Assessment & Reflexion)
+- Entwickler (Implementation der Metrics)
+
+**Wann verwenden:**
+- Kontinuierlich während Projekten (automatische Diagnostik)
+- Am Ende von Meilensteinen (Rubrik-basiertes Assessment)
+- Bei Lernschwierigkeiten (gezieltes Scaffolding)
+- Für Portfolios & Zeugnisse (quantitative Daten)
+
+**Besonderheit:**
+Macht Lernfortschritt **messbar** und **objektiv** - wichtig für Rechenschaftspflicht in Schulen.
+
+---
+
+### 9. integration-guide.md ✨ NEU
+**Zweck:** Dokumentation der Framework-Integration und Workflows
+
+**Inhalt:**
+
+#### Überblick:
+- Zusammenfassung der 3 neuen Frameworks
+- Wie sie mit bestehenden Dateien zusammenspielen
+
+#### Integration in Bestehendes Framework:
+- **Pedagogical Model** ↔️ `system-prompt.md`: Rollenmodell & Prinzipien
+- **Pedagogical Model** ↔️ `phase-prompts.md`: 4-Phasen vs. 6-Phasen Mapping
+- **Competency Framework** ↔️ `conversation-patterns.md`: Assessment-Methoden
+- **Competency Framework** ↔️ `project-spec-template.yaml`: Skill-Tracking
+
+#### Workflow-Integration:
+- Mermaid-Diagramm: Copilot Decision Flow mit neuen Frameworks
+- Start → Rollenverständnis → Phasenerkennung → Level-Assessment → Adaptive Response
+
+#### Praktische Anwendung:
+- **Für Copilot:** Wann welche Datei konsultieren
+- **Für Lehrer:** Welche Tools für welche Aufgaben
+- **Für Lernende:** Transparenz über Lernprozess
+
+#### Technische Umsetzung:
+- Dateistruktur-Übersicht
+- Empfohlene Updates für bestehende Dateien
+- Implementierungs-Checkliste
+
+#### Quellenverankerung:
+- Bibliografie der zitierten Theorien
+- Links zu Forschungsliteratur
+
+**Für wen:**
+- Entwickler (Implementation-Guide)
+- Neue Team-Mitglieder (Onboarding)
+- Maintainer (Understanding system design)
+
+**Wann verwenden:**
+- Bei Integration neuer Features
+- Bei Fragen zu Framework-Architektur
+- Als Referenz für Workflows
+- Bei Debugging von Copilot-Verhalten
+
+**Besonderheit:**
+Die "Landkarte" des gesamten Systems - zeigt wie alle Teile zusammenarbeiten.
+
+---
+
+## 📊 Datei-Größen & Komplexität (Aktualisiert)
+
+| Datei | Zeilen | Größe | Komplexität | Verwendung |
+|-------|--------|-------|-------------|------------|
+| `README.md` | ~550 | 35 KB | Mittel | Dokumentation |
+| `system-prompt.md` | ~250 | 15 KB | Niedrig | Copilot Instructions |
+| `phase-prompts.md` | ~1200 | 72 KB | Hoch | Prompt-Bibliothek |
+| `conversation-patterns.md` | ~900 | 54 KB | Sehr Hoch | Logic & Assessment |
+| `project-spec-template.yaml` | ~450 | 27 KB | Mittel | Data Structure |
+| `example-project.md` | ~750 | 45 KB | Niedrig | Demonstration |
+| `file-overview.md` | ~700 | 42 KB | Niedrig | Übersicht |
+| **pedagogical-model.md** ✨ | ~2030 | 123 KB | Sehr Hoch | Theorie |
+| **competency-framework.md** ✨ | ~1800 | 108 KB | Sehr Hoch | Diagnostik |
+| **integration-guide.md** ✨ | ~580 | 35 KB | Mittel | Workflows |
+| **TOTAL** | **~9210** | **~556 KB** | - | Komplettes Framework |
+
+---

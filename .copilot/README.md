@@ -11,14 +11,21 @@ Das System kombiniert:
 - **Zone of Proximal Development** - Dynamische Schwierigkeitsanpassung
 - **Polya's Problem-Solving** - Systematischer Problemlösungsansatz
 
+> **✨ NEU (Nov 2025):** Erweitert um wissenschaftlich fundierte [Didaktische Frameworks](#-neue-didaktische-frameworks) mit 4-Phasen-Zyklus, Kompetenz-Tracking und differenziellem Code-Support.
+
 ## 🏗️ Architektur
 
 ```
 .copilot/
 ├── system-prompt.md              # Master System Prompt für Copilot
+├── pedagogical-model.md          # ✨ NEU: Didaktische Grundlagen (4-Phasen-Zyklus)
+├── competency-framework.md       # ✨ NEU: Kompetenz-Tracking & Diagnostik
+├── integration-guide.md          # ✨ NEU: Wie alles zusammenhängt
 ├── phase-prompts.md              # Prompts für 6 Lernphasen
 ├── conversation-patterns.md      # Konversationsmuster & Assessment
 ├── project-spec-template.yaml    # YAML-Template für Projekte
+├── example-project.md            # Vollständiges Beispielprojekt
+├── file-overview.md              # Detaillierte Datei-Beschreibungen
 └── README.md                     # Diese Datei
 ```
 
@@ -449,7 +456,88 @@ Verbesserungen willkommen!
 - Übersetzungen (Englisch, andere Sprachen)
 - Best Practice Beispiele
 
-## 📄 Lizenz
+---
+
+## 🆕 Neue Didaktische Frameworks (Nov 2025)
+
+Das Framework wurde um **wissenschaftlich fundierte pädagogische Konzepte** erweitert:
+
+### 📖 [Pädagogisches Modell](pedagogical-model.md)
+
+**Kernkonzepte:**
+- **4-Phasen-Zyklus:** Anforderungsanalyse → Konzeptualisierung → Realisierung → Reflexion
+- **Rollenmodell:** Klare Definition von Lernenden, KI-Copilot ("Kai"), und Lehrer
+- **Differentieller Code-Support:** Adaptive Unterstützung je nach Level (Anfänger/Fortgeschritten/Erfahren)
+- **Didaktische Prinzipien:** Scaffolding & Fading, Zone of Proximal Development, Cognitive Apprenticeship
+
+**Wann nutzen:** 
+- Als theoretische Basis für das gesamte Framework verstehen
+- Bei Projekt-Design: Welche Phase? Welche Rolle übernimmt die KI?
+- Bei Anpassung der Prompts an neue Zielgruppen
+
+### 📊 [Kompetenzframework](competency-framework.md)
+
+**Kernkonzepte:**
+- **5 Kernkompetenzen:** Modellieren, Implementieren, Reflektieren, Kommunizieren, KI-Kooperation
+- **4 Level pro Kompetenz:** Novize → Fortgeschritten → Kompetent → Expert
+- **Automatisierte Diagnostik:**
+  - Prompt-Evolution-Analyse (Qualität der Fragen)
+  - Code-Übernahmequote (Authorship-Tracking)
+  - Debugging-Autonomie-Score
+  - Konzept-Mastery-Tracker
+  - Metakognitive Reifung
+- **Bewertungs-Rubrik** für Lehrer
+- **Self-Assessment** für Lernende
+
+**Wann nutzen:**
+- Bei Lernfortschritts-Bewertung: Wo steht der Lernende?
+- Bei Anpassung der Unterstützung: Welches Level? Welche Kompetenz fördern?
+- Bei Portfolio-Reviews: Messindikatoren für objektive Bewertung
+
+### � [Integration Guide](integration-guide.md)
+
+**Kernkonzepte:**
+- Wie die neuen Frameworks mit bestehenden Dateien zusammenarbeiten
+- Workflow-Integration in den Lernzyklus
+- Praktische Anwendung für Copilot, Lehrer, Lernende
+- Technische Umsetzung & Datenfluss
+
+**Wann nutzen:**
+- Beim Onboarding neuer Nutzer: "Wie funktioniert das System?"
+- Bei Implementierung eigener Tools: Welche Daten-Schnittstellen?
+- Bei Erweiterung des Frameworks: Wo füge ich neue Konzepte ein?
+
+### 🎯 Zusammenspiel der Frameworks
+
+```
+Pädagogisches Modell (WARUM)
+        ↓
+   Definiert Phasen & Rollen
+        ↓
+Kompetenzframework (WAS)
+        ↓
+   Definiert Lernziele & Metriken
+        ↓
+Phase-Prompts & Conversation-Patterns (WIE)
+        ↓
+   Konkrete Prompts für Copilot
+        ↓
+Integration Guide (UMSETZUNG)
+        ↓
+   Praktische Anwendung
+```
+
+**Theoretische Fundierung:**
+- Polya (1945): Problem Solving
+- Vygotsky (1978): Zone of Proximal Development
+- Collins et al. (1989): Cognitive Apprenticeship
+- Hubwieser (2007): Didaktik der Informatik
+- Wing (2006): Computational Thinking
+- GI-Bildungsstandards Informatik
+
+---
+
+## �📄 Lizenz
 
 Dieses Framework ist Teil des `project-based-learning` Repositories und steht unter der gleichen Lizenz.
 
@@ -458,4 +546,4 @@ Dieses Framework ist Teil des `project-based-learning` Repositories und steht un
 **Happy Coding & Teaching! 🚀**
 
 *Erstellt im Rahmen des KI-gestützten projektbasierten Lern-Projekts*  
-*Version 1.0 - März 2025*
+*Version 2.0 - November 2025 (erweitert mit Didaktischen Frameworks)*
