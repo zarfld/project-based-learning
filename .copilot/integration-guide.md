@@ -44,6 +44,27 @@ Dieses Dokument beschreibt, wie die neuen didaktischen Frameworks in das bestehe
 
 ---
 
+### 3. **[teaching-methods.md](teaching-methods.md)** ✨ NEU
+
+**Inhalt:**
+- **6 Kategorien konkreter Methoden:**
+  1. Fragetechniken (Prompt-a-thon, 5-Why, Socratic Review)
+  2. Didaktische Analogien (LEGO, Koch-Rezept, Orchester)
+  3. Modellierungsmethoden (Think-Pair-Program, CRC-Karten)
+  4. Code-Verstehensmethoden (Code-Leseprotokoll, Rubber-Duck)
+  5. Debugging-Strategien (STOP, Binary-Search)
+  6. Reflexionsmethoden (Dev-Log, Think-Aloud)
+- **Methodeneinsatz nach Lernphase** (Mapping)
+- **Copilot-Integration** (wie Methoden in Prompts einfließen)
+
+**Nutzen:**
+- Verbindet abstrakte Theorie mit konkreter Praxis
+- Sofort anwendbare Unterrichtsmethoden
+- Erweitert Copilot-Repertoire für adaptive Unterstützung
+- Inspiration für neue Methoden
+
+---
+
 ## 🔗 Integration in Bestehendes Framework
 
 ### Bestehende Dateien (unverändert, aber nun komplementär)
@@ -153,15 +174,22 @@ graph TD
 2. Referenziere `pedagogical-model.md` → wähle passende Rolle
 3. Nutze `competency-framework.md` → passe Scaffolding an
 4. Wende Prompts aus `phase-prompts.md` an
+5. Konsultiere `teaching-methods.md` → wähle passende Methode für Situation
 
 **Während der Interaktion:**
 - Beobachte Indikatoren aus `competency-framework.md`
 - Passe Unterstützung dynamisch an (Scaffolding & Fading)
+- Nutze Methoden aus `teaching-methods.md`:
+  - Verständnisschwierigkeiten? → Analogien (LEGO, Koch-Rezept)
+  - Anforderungen unklar? → Prompt-a-thon
+  - OOP lernen? → CRC-Karten, Orchester-Analogie
+  - Debugging? → STOP-Methode, 5-Why
 - Dokumentiere Fortschritte im Chat
 
 **Nach Projekt-Abschluss:**
 - Aktualisiere Kompetenz-Scores in `project-spec.yaml`
 - Dokumentiere Lessons Learned
+- Dokumentiere erfolgreiche Methoden in `project-spec.yaml`
 - Empfehle nächste Schritte
 
 ---
@@ -171,18 +199,21 @@ graph TD
 **Setup (einmalig):**
 1. Lese `pedagogical-model.md` → verstehe Philosophie
 2. Lese `competency-framework.md` → lerne Bewertungskriterien
-3. Nutze Templates aus `project-spec-template.yaml`
+3. Lese `teaching-methods.md` → erkunde Methodenrepertoire
+4. Nutze Templates aus `project-spec-template.yaml`
 
 **Pro Projekt:**
 1. Initiales Assessment → Level einschätzen
 2. Beobachten über Dashboard (Konzept in competency-framework.md)
 3. Manuelles Review mit Rubrik (competency-framework.md)
 4. Feedback geben, Level updaten
+5. Probiere neue Methoden aus `teaching-methods.md`
 
 **Pro Semester:**
 - Portfolio-Review aller Projekte
 - Kompetenz-Progression analysieren
 - Individuelle Förderpläne erstellen
+- Erfolgreiche Methoden dokumentieren
 
 ---
 
@@ -192,11 +223,12 @@ graph TD
 - Self-Assessment durchführen (competency-framework.md)
 - Reflexionsjournal führen (pedagogical-model.md, Phase 4)
 - Nächste Lernziele identifizieren
+- Lieblings-Methoden identifizieren (teaching-methods.md)
 
 **Pro Projekt:**
 - Spec erstellen mit `project-spec.yaml`
 - Phasen durchlaufen (pedagogical-model.md)
-- Dev-Log führen
+- Dev-Log führen (Methode aus teaching-methods.md)
 - Präsentation vorbereiten
 
 ---
