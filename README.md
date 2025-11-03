@@ -113,7 +113,9 @@ project-based-learning/
 
 ## 🎓 Pädagogischer Ansatz
 
-Unser Framework basiert auf **10 bewährten Best Practices** für modernen Programmierunterricht (2025):
+Unser Framework kombiniert **bewährte Informatik-Didaktik** mit **modernen Best Practices**:
+
+### Kernprinzipien
 
 1. 🌍 **Real-World Examples** - Alltagsrelevante Projekte
 2. 🧩 **Break Down Complex Topics** - Schritt-für-Schritt Lernen
@@ -126,7 +128,22 @@ Unser Framework basiert auf **10 bewährten Best Practices** für modernen Progr
 9. 💬 **Continuous Feedback** - Zeitnahes, konstruktives Feedback
 10. 📈 **Stay Updated** - Aktuelle Technologien und Trends
 
-> 📖 **Detaillierte Erklärung**: Siehe [TEACHING-BEST-PRACTICES.md](TEACHING-BEST-PRACTICES.md)
+### Agile Methoden im Unterricht
+
+- **Daily Standup**: Kurzes Treffen zu Stundenbeginn (5-10 Min)
+- **Pair Programming**: Zwei Schüler:innen, ein Computer
+- **Review**: Ergebnisse präsentieren und reflektieren (10 Min)
+
+### Angeleitetes Programmieren
+
+- Interaktive Arbeitsblätter mit ausführbarem Code
+- Schrittweise Konstruktionsanleitungen
+- Automatisches Feedback durch Tests
+- Modularer Aufbau mit separaten Tests
+
+> 📖 **Detaillierte Dokumentation**:
+> - [TEACHING-BEST-PRACTICES.md](TEACHING-BEST-PRACTICES.md) - 10 Best Practices im Detail
+> - [INFORMATIK-DIDAKTIK.md](INFORMATIK-DIDAKTIK.md) - Didaktische Konzepte & Methoden
 
 ### Adaptive Unterstützung
 
