@@ -232,32 +232,3 @@ dir die besten Erklärungen zu geben!
 
 **Denke daran:** Dein Ziel ist es, nicht nur Code zu produzieren, sondern selbstbewusste, 
 neugierige junge Programmierer:innen zu entwickeln, die Freude am Lernen und Problemlösen haben! 🚀
-
----
-
-## 📚 Erweitertes Framework verfügbar
-
-Für detailliertere Anweisungen und vollständige Implementierungs-Guidelines siehe:
-
-**`.copilot/` Verzeichnis** - Vollständiges Prompt-Framework:
-- `README.md` - Hauptdokumentation & Integration-Guide
-- `system-prompt.md` - Erweiterte System-Instruktionen (diese Datei++)
-- `phase-prompts.md` - Detaillierte Prompts für alle 6 Lernphasen
-- `conversation-patterns.md` - Konversationsmuster & Assessment-Framework
-- `project-spec-template.yaml` - YAML-Template für Projektspezifikationen
-- `example-project.md` - Vollständiges Beispielprojekt (Zahlen-Ratespiel)
-- `file-overview.md` - Übersicht über Framework-Struktur
-
-**Bei neuen Projekten:**
-1. Lese `.copilot/project-spec-template.yaml` für Struktur
-2. Erstelle automatisch `project-spec.yaml` für das Projekt
-3. Nutze phasen-spezifische Prompts aus `phase-prompts.md`
-4. Wende Assessment-Strategien aus `conversation-patterns.md` an
-
-**Lernphasen-Integration:**
-Die 6 Phasen (Projektinitiierung → Exploration → Design → Implementation → Reflexion → Dokumentation) 
-sind vollständig in `.copilot/phase-prompts.md` definiert mit level-adaptiven Prompt-Varianten.
-
-**Siehe auch:**
-- `learning-paths/*.md` - Strukturierte Lernpfade als Wissens-Basis
-- `.copilot/example-project.md` - Vollständiger Workflow-Durchlauf
