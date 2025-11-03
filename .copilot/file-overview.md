@@ -18,11 +18,12 @@ Vollständiges Verzeichnis aller Prompt-Framework-Dateien mit Zweck und Verwendu
 │
 ├── pedagogical-model.md          # ✨ NEU: Theoretisches Fundament (4-Phasen, Rollen)
 ├── competency-framework.md       # ✨ NEU: 5 Kompetenzen, Diagnostik, Rubrik
-└── integration-guide.md          # ✨ NEU: Framework-Integration & Workflows
+├── integration-guide.md          # ✨ NEU: Framework-Integration & Workflows
+└── teaching-methods.md           # ✨ NEU: Konkrete Methoden & Analogien
 ```
 
 > **✨ NEU (November 2025):** Erweitert um wissenschaftlich fundierte didaktische Frameworks basierend auf 
-> Polya, Vygotsky, Collins, Hubwieser, Wing und GI-Bildungsstandards.
+> Polya, Vygotsky, Collins, Hubwieser, Wing und GI-Bildungsstandards sowie konkrete Praxismethoden.
 
 ---
 
@@ -739,6 +740,59 @@ Die "Landkarte" des gesamten Systems - zeigt wie alle Teile zusammenarbeiten.
 
 ---
 
+### 10. teaching-methods.md ✨ NEU
+**Zweck:** Konkrete, praxiserprobte Unterrichtsmethoden und anschauliche Analogien
+
+**Inhalt:**
+
+#### 1. Fragetechniken:
+- **Prompt-a-thon** (Requirement Elicitation nach Polya)
+- **5-Why-Debugging** (Root-Cause-Analyse)
+- **Socratic Code Review** (Leitfragen statt Lösungen)
+
+#### 2. Didaktische Analogien:
+- **LEGO-System-Analogie** ⭐ (KI-Koaktivität verständlich machen)
+- **Koch-Rezept-Analogie** (Algorithmen & Syntax)
+- **Dirigent-Orchester-Analogie** (OOP)
+
+#### 3. Modellierungsmethoden:
+- **Think-Pair-Program** (Kollaboratives Lernen)
+- **Story-Mapping** (Use Cases entwickeln)
+- **CRC-Karten** (Class-Responsibility-Collaborator für OOP)
+- **Zustandsdiagramme mit Emojis** (visuelle Modellierung)
+
+#### 4. Code-Verstehensmethoden:
+- **Code-Leseprotokoll** (Zeile-für-Zeile-Analyse)
+- **Rubber-Duck-Debugging** (mit Copilot)
+- **Code-Kommentar-Challenge**
+
+#### 5. Debugging-Strategien:
+- **STOP-Methode** (Symptom-Theorie-Observation-Proven)
+- **Binary-Search-Debugging** (Fehlerbereich eingrenzen)
+- **Debug-Print-Strategie** (Strategisches Logging)
+
+#### 6. Reflexionsmethoden:
+- **Dev-Log mit Leitfragen** (Strukturierte Metakognition)
+- **Think-Aloud Protocol** (Laut denken beim Programmieren)
+- **Code-Review-Checkliste** (Systematische Selbstprüfung)
+- **Peer-Explanation** (Erklären als Lernmethode)
+
+**Für wen:**
+- Lehrer (unmittelbar anwendbare Unterrichtsmethoden)
+- Copilot (Methodenrepertoire für adaptive Unterstützung)
+- Curriculum-Designer (Praxisnahe Umsetzungsideen)
+
+**Wann verwenden:**
+- In jeder Lernphase (Methoden-Mapping nach Phase vorhanden)
+- Bei Lernschwierigkeiten (passende Methode wählen)
+- Für Abwechslung im Unterricht (verschiedene Lerntypen)
+- Als Inspiration für eigene Methoden
+
+**Besonderheit:**
+Verbindet abstrakte Theorie mit konkreter Praxis - jede Methode mit Beispielen, Templates und Copilot-Prompts.
+
+---
+
 ## 📊 Datei-Größen & Komplexität (Aktualisiert)
 
 | Datei | Zeilen | Größe | Komplexität | Verwendung |
@@ -753,6 +807,7 @@ Die "Landkarte" des gesamten Systems - zeigt wie alle Teile zusammenarbeiten.
 | **pedagogical-model.md** ✨ | ~2030 | 123 KB | Sehr Hoch | Theorie |
 | **competency-framework.md** ✨ | ~1800 | 108 KB | Sehr Hoch | Diagnostik |
 | **integration-guide.md** ✨ | ~580 | 35 KB | Mittel | Workflows |
-| **TOTAL** | **~9210** | **~556 KB** | - | Komplettes Framework |
+| **teaching-methods.md** ✨ | ~620 | 37 KB | Mittel | Praxismethoden |
+| **TOTAL** | **~9830** | **~593 KB** | - | Komplettes Framework |
 
 ---

@@ -494,10 +494,64 @@ Das Framework wurde um **wissenschaftlich fundierte pädagogische Konzepte** erw
 - Bei Anpassung der Unterstützung: Welches Level? Welche Kompetenz fördern?
 - Bei Portfolio-Reviews: Messindikatoren für objektive Bewertung
 
-### � [Integration Guide](integration-guide.md)
+### 🔗 [Integration Guide](integration-guide.md)
 
 **Kernkonzepte:**
 - Wie die neuen Frameworks mit bestehenden Dateien zusammenarbeiten
+- Workflow-Diagramm: Copilot Decision Flow
+- Praktische Anwendung für Copilot, Lehrer und Lernende
+- Empfohlene Updates und Implementierungs-Checkliste
+- Quellenverankerung (Bibliografie der Theorien)
+
+**Wann nutzen:**
+- Bei Integration neuer Features: Wie fügt sich das ins System ein?
+- Bei Debugging von Copilot-Verhalten: Welche Dateien beeinflussen was?
+- Als Onboarding-Material für neue Team-Mitglieder
+- Bei Fragen zur Architektur: "Wie hängt alles zusammen?"
+
+### 🎓 [Teaching Methods](teaching-methods.md) ⭐
+
+**Kernkonzepte:**
+- **Fragetechniken:**
+  - Prompt-a-thon (Requirement Elicitation nach Polya)
+  - 5-Why-Debugging (Root-Cause-Analyse)
+  - Socratic Code Review (Leitfragen statt Lösungen)
+  
+- **Didaktische Analogien:**
+  - LEGO-System-Analogie (KI-Koaktivität verständlich)
+  - Koch-Rezept-Analogie (Algorithmen & Syntax)
+  - Dirigent-Orchester-Analogie (OOP)
+  
+- **Modellierungsmethoden:**
+  - Think-Pair-Program
+  - Story-Mapping für Use Cases
+  - CRC-Karten für OOP
+  - Zustandsdiagramme mit Emojis
+  
+- **Code-Verstehensmethoden:**
+  - Code-Leseprotokoll
+  - Rubber-Duck-Debugging
+  - Code-Kommentar-Challenge
+  
+- **Debugging-Strategien:**
+  - STOP-Methode
+  - Binary-Search-Debugging
+  - Debug-Print-Strategie
+  
+- **Reflexionsmethoden:**
+  - Dev-Log mit Leitfragen
+  - Think-Aloud Protocol
+  - Code-Review-Checkliste
+
+**Wann nutzen:**
+- Bei Lernschwierigkeiten: Passende Methode wählen
+- Für Abwechslung im Unterricht: Verschiedene Lerntypen ansprechen
+- Als Copilot-Repertoire: "Nutze LEGO-Analogie zum Erklären"
+- Für Lehrer-Training: Konkrete, erprobte Unterrichtsmethoden
+
+---
+
+### 🔄 Zusammenspiel der Frameworks
 - Workflow-Integration in den Lernzyklus
 - Praktische Anwendung für Copilot, Lehrer, Lernende
 - Technische Umsetzung & Datenfluss
@@ -507,9 +561,32 @@ Das Framework wurde um **wissenschaftlich fundierte pädagogische Konzepte** erw
 - Bei Implementierung eigener Tools: Welche Daten-Schnittstellen?
 - Bei Erweiterung des Frameworks: Wo füge ich neue Konzepte ein?
 
-### 🎯 Zusammenspiel der Frameworks
+### 🔄 Zusammenspiel der Frameworks
 
 ```
+Pedagogical Model (WARUM)
+    ↓ definiert
+Rollenmodell + 4-Phasen + Prinzipien
+    ↓ implementiert in
+System-Prompt + Phase-Prompts
+    ↓ nutzt
+Teaching Methods (WIE konkret)
+    ↓ evaluiert mit
+Competency Framework (WAS messen)
+    ↓ dokumentiert in
+Project-Spec + Integration Guide
+```
+
+**Kern-Aussage:**
+- **Pedagogical Model** = Theoretisches Fundament (WARUM so?)
+- **Competency Framework** = Messbare Ziele (WAS erreichen?)
+- **Teaching Methods** = Konkrete Werkzeuge (WIE umsetzen?)
+- **Phase-Prompts & Conversation-Patterns** = Praktische Anwendung (Copilot-Verhalten)
+- **Integration Guide** = Landkarte (Wie hängt alles zusammen?)
+
+---
+
+### 📚 Theoretisches Fundament
 Pädagogisches Modell (WARUM)
         ↓
    Definiert Phasen & Rollen
